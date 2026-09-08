@@ -141,7 +141,7 @@ tbody tr:nth-child(6) :is(td:nth-child(-n+2), td:nth-child(4)) { color: #f7df1e;
 
 ---
 
-# Декораторы
+# Decorators
 
 <div class="grid grid-cols-[1fr_14rem] gap-6 items-start">
 <div>
@@ -161,6 +161,8 @@ Angular и Nest так пишут каждый день. TypeScript это по�
 
 
 ---
+class: two-fns-slide
+---
 
 # Почему две функции — это проблема
 
@@ -168,7 +170,7 @@ Angular и Nest так пишут каждый день. TypeScript это по�
 
 TypeScript при сборке превращает `@logged` в обычный вызов. Какие аргументы туда подставить — решает он. В двух режимах это **разные аргументы**.
 
-<div class="grid grid-cols-2 gap-4">
+<div class="grid grid-cols-2 gap-4" style="--slidev-code-font-size: 14px; --slidev-code-line-height: 21px;">
 
 ```ts
 // Nest / Angular сейчас
@@ -190,15 +192,24 @@ function logged(fn, context) {
 
 `@Injectable` / `@Get` правят Nest и Angular. Свои декораторы придется переписать.
 
+<style>
+.slidev-code {
+  font-size: 14px !important;
+  line-height: 21px !important;
+}
+</style>
+
 
 ---
+class: temporal-slide
+---
 
-# Temporal: долгострой в истории современного JavaScript
+# Temporal: долгострой в истории JavaScript
 
-<div class="grid grid-cols-[1fr_18rem] gap-6 items-start">
+<div class="temporal-body">
 <div>
 
-Семь лет ожидания — не баг. Если фича трогает фундамент языка, TC39 может годами не выпускать её в релиз.
+Эту фичу постигли семь лет ожидания. Если затронут фундамент языка, TC39 может годами не выпускать её в релиз.
 
 Замена `Date`: даты, пояса, календари. Не пара методов — целый набор классов. Большую часть времени провёл на стадиях **2 и 3**. На тройке специально не релизят, пока нет двух реализаций в движках.
 
@@ -210,8 +221,9 @@ function logged(fn, context) {
 **Stage 4** — спека заморожена, ломать API уже не будут. Движки снимают флаги. Фича идёт в ES2025/ES2026, полная раскатка — к ES2027.
 
 </div>
-
-<img src="/temporal-meme.jpg" class="w-60 rounded" alt="Почта России" />
+<div class="temporal-photo">
+  <img src="/temporal-meme.jpg" alt="Почта России" />
+</div>
 </div>
 
 
@@ -226,4 +238,18 @@ function logged(fn, context) {
 **Производительность.** Чтобы вести себя как примитивы, нужна глубокая неизменяемость. В отличие от Rust, где структуры лежат в непрерывном участке памяти, в JavaScript это множество указателей в куче. Для V8 и SpiderMonkey — огромный оверхед на сборку мусора и парсинг. «Это будет летать, потому что это примитив» — на деле тормозило сильнее обычных объектов.
 
 **Перегрузка `===`.** Киллер-фича: `#{ a: 1 } === #{ a: 1 }` — `true`. Для этого движку при каждом `===` пришлось бы рекурсивно обходить все ключи. Сверхбыстрая операция (типы и ссылки) превращалась в непредсказуемо долгую O(N). Менять базовое поведение главного оператора сравнения под «особый вид объектов» комитет счёл плохим паттерном: запутает разработчиков и усложнит JIT.
+
+---
+
+# Ссылки
+
+<div class="grid grid-cols-[1fr_auto] gap-12 items-center">
+<div>
+
+В файле — ссылки из доклада: каталог TC39, Decorators, Temporal, Records & Tuples.
+
+</div>
+
+<QrLink url="https://github.com/AnSBeliaev/features-in-java-script/blob/master/links.md" :size="220" label="github.com/…/links.md" />
+</div>
 

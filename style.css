@@ -37,3 +37,50 @@
 .slidev-layout th {
   color: var(--js-accent);
 }
+
+.slidev-layout.temporal-slide {
+  position: relative;
+}
+
+.slidev-layout.temporal-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 12rem;
+  background: #2d2d30;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slidev-layout.temporal-slide > * {
+  position: relative;
+  z-index: 1;
+}
+
+.temporal-body {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.temporal-photo img {
+  margin-top: 1.2rem;
+  width: 15rem;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.two-fns-slide {
+  --slidev-code-font-size: 14px;
+  --slidev-code-line-height: 21px;
+}
+
+.two-fns-slide .slidev-code,
+.two-fns-slide pre,
+.two-fns-slide pre code {
+  font-size: 14px !important;
+  line-height: 21px !important;
+}
