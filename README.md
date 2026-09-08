@@ -1,11 +1,8 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Как фичи попадают в JavaScript?
 
-To start the slide show:
+```bash
+npm install
+npm run dev
+```
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev at the [documentation](https://sli.dev/).
+Слайды откроются на http://localhost:3030
