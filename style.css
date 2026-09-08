@@ -34,19 +34,26 @@
   color: #e8e8e8;
 }
 
+.slidev-layout.tc39-slide li strong,
+.slidev-layout.champions-slide li strong {
+  color: var(--js-accent);
+}
+
 .slidev-layout th {
   color: var(--js-accent);
 }
 
 .slidev-layout.temporal-slide,
 .slidev-layout.decorators-slide,
-.slidev-layout.records-slide {
+.slidev-layout.records-slide,
+.slidev-layout.champions-slide {
   position: relative;
 }
 
 .slidev-layout.temporal-slide::before,
 .slidev-layout.decorators-slide::before,
-.slidev-layout.records-slide::before {
+.slidev-layout.records-slide::before,
+.slidev-layout.champions-slide::before {
   content: '';
   position: absolute;
   top: 0;
@@ -60,7 +67,8 @@
 
 .slidev-layout.temporal-slide > *,
 .slidev-layout.decorators-slide > *,
-.slidev-layout.records-slide > * {
+.slidev-layout.records-slide > *,
+.slidev-layout.champions-slide > * {
   position: relative;
   z-index: 1;
 }
@@ -88,14 +96,16 @@
   border-radius: 0.5rem;
 }
 
-.records-photo {
+.records-photo,
+.champions-photo {
   overflow: hidden;
   border-radius: 0.5rem;
   margin-top: 1.2rem;
   line-height: 0;
 }
 
-.records-photo img {
+.records-photo img,
+.champions-photo img {
   margin-top: 0;
   border-radius: 0;
   transform: scale(1.05);
