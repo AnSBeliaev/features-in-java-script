@@ -15,8 +15,8 @@ async function render() {
     width: props.size,
     margin: 1,
     color: {
-      dark: '#1e3a45',
-      light: '#ffffff',
+      dark: '#1E1E1E',
+      light: '#FFFFFF',
     },
   })
 }
@@ -34,6 +34,6 @@ watch(() => [props.url, props.size], render)
       class="rounded bg-white p-2"
       alt=""
     >
-    <span v-if="label" class="text-sm opacity-80">{{ label }}</span>
+    <span v-if="label" class="text-sm text-[#F7DF1E]">{{ label }}</span>
   </a>
 </template>

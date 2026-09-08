@@ -1,0 +1,39 @@
+:root {
+  --js-bg: #1e1e1e;
+  --js-text: #d4d4d4;
+  --js-accent: #f7df1e;
+  --js-panel: #252526;
+}
+
+.slidev-layout {
+  background: var(--js-bg) !important;
+  color: var(--js-text);
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  color: var(--js-accent) !important;
+}
+
+.slidev-layout h1 + p {
+  color: var(--js-text);
+  opacity: 0.85;
+}
+
+.slidev-layout a {
+  color: var(--js-accent);
+}
+
+.slidev-layout :not(pre) > code {
+  color: var(--js-accent);
+  background: var(--js-panel);
+}
+
+.slidev-layout strong {
+  color: #e8e8e8;
+}
+
+.slidev-layout th {
+  color: var(--js-accent);
+}
