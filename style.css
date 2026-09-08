@@ -78,10 +78,6 @@
   overflow: hidden;
 }
 
-.progress-bar {
-  display: none !important;
-}
-
 .temporal-body {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -129,7 +125,7 @@
   line-height: 1.35;
 }
 
-.stages-list {
+.slidev-layout.stages-slide .tc39-stages {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
@@ -138,25 +134,25 @@
   padding-left: 1.15rem;
 }
 
-.stage {
+.slidev-layout.stages-slide .tc39-stage {
   display: grid;
   grid-template-columns: 1.7rem 1fr;
   gap: 0.45rem;
   align-items: start;
 }
 
-.stage-emoji {
+.slidev-layout.stages-slide .tc39-stage-emoji {
   font-size: 1.25rem;
   line-height: 1.3;
   margin-left: -2.05rem;
   text-align: center;
 }
 
-.stage strong {
+.slidev-layout.stages-slide .tc39-stage strong {
   color: var(--js-accent);
 }
 
-.stage-27 {
+.slidev-layout.stages-slide .tc39-stage-27 {
   background: rgb(247 223 30 / 0.08);
   margin-left: -1.15rem;
   padding: 0.35rem 0.7rem 0.35rem 1.15rem;
