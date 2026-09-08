@@ -66,55 +66,46 @@ class: champions-slide
 </div>
 
 ---
-class: text-sm
+class: stages-slide
+notes: |
+  Stage 2.7 — инсайд. Дизайн уже заморожен, пишут test262. Без тестов в тройку не пустят.
 ---
 
 # Стадии TC39
 
-Каждая новая фича в JavaScript (ECMAScript) проходит 5 обязательных стадий в комитете TC39 (от зарождения идеи до полноценного релиза). Этот процесс гарантирует, что в язык попадают только хорошо продуманные и протестированные возможности.
+<div class="stages-list">
 
-| Стадия | Название | Что происходит | Готовность | |
-| --- | --- | --- | --- | --- |
-| **0** | Strawman (идея) | Любой делегат или контрибьютор выносит мысль на обсуждение | Пока только концепция | 🤔 |
-| **1** | Proposal | Комитет признаёт проблему важной. Разбирают API, синтаксис, риски | Дизайн оформляют, появляются полифилы | 🧪 |
-| **2** | Draft | Первое точное описание в языке спецификации. Архитектура фиксируется | Дошлифовывают детали | 🧽 |
-| **2.7** | Candidate Spec | Спека и дизайн одобрены. Пора писать официальные тесты (test262) | Дизайн заморожен, ждут тестов | 🧊 |
-| **3** | Candidate | Тесты есть. Движки (V8, SpiderMonkey) начинают реализацию | Почти готово, можно пробовать в браузерах | 🤞 |
-| **4** | Finished | Прошла проверку на реальных движках. Входит в следующий ES | Часть стандарта JavaScript | 🥳 |
+<div class="stage">
+<span class="stage-emoji">🤔</span>
+<div><strong>Stage 0: Strawman</strong> — Просто идея. Кто-то пришел и сказал: «Было бы круто, если бы в JS было вот так».</div>
+</div>
 
-<style>
-.slidev-layout {
-  line-height: 1.25;
-}
-p {
-  line-height: 1.3;
-  margin: 0.4em 0 0.6em;
-}
-table {
-  font-size: 0.92em;
-  line-height: 1.45;
-}
-th, td {
-  padding: 0.45rem 0.55rem;
-  vertical-align: top;
-  line-height: 1.45;
-}
-td:last-child {
-  font-size: 1.85em;
-  line-height: 1;
-  text-align: center;
-  vertical-align: middle;
-  width: 3.2rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-}
-tbody tr:nth-child(1) :is(td:nth-child(-n+2), td:nth-child(4)) { color: #f87171; font-weight: 700; }
-tbody tr:nth-child(2) :is(td:nth-child(-n+2), td:nth-child(4)) { color: #fb923c; font-weight: 700; }
-tbody tr:nth-child(3) :is(td:nth-child(-n+2), td:nth-child(4)) { color: #fbbf24; font-weight: 700; }
-tbody tr:nth-child(4) :is(td:nth-child(-n+2), td:nth-child(4)) { color: #fde047; font-weight: 700; }
-tbody tr:nth-child(5) :is(td:nth-child(-n+2), td:nth-child(4)) { color: #a3e635; font-weight: 700; }
-tbody tr:nth-child(6) :is(td:nth-child(-n+2), td:nth-child(4)) { color: #f7df1e; font-weight: 700; }
-</style>
+<div class="stage">
+<span class="stage-emoji">🧪</span>
+<div><strong>Stage 1: Proposal</strong> — Проблема признана важной. Назначен чемпион, рождаются первые экспериментальные полифилы.</div>
+</div>
+
+<div class="stage">
+<span class="stage-emoji">🧽</span>
+<div><strong>Stage 2: Draft</strong> — Первое точное описание синтаксиса в спецификации. Архитектура фичи фиксируется.</div>
+</div>
+
+<div class="stage stage-27">
+<span class="stage-emoji">🧊</span>
+<div><strong>Stage 2.7: Assessment</strong> — (Новинка!) Дизайн фичи заморожен. Изменения больше не вносятся, авторы начинают писать тесты.</div>
+</div>
+
+<div class="stage">
+<span class="stage-emoji">🤞</span>
+<div><strong>Stage 3: Candidate</strong> — Тесты готовы. Браузерные движки (V8, WebKit) начинают писать нативную реализацию.</div>
+</div>
+
+<div class="stage">
+<span class="stage-emoji">🥳</span>
+<div><strong>Stage 4: Finished</strong> — Фича протестирована в реальных браузерах и официально становится частью стандарта JavaScript.</div>
+</div>
+
+</div>
 
 ---
 class: decorators-slide
