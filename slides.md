@@ -1,7 +1,7 @@
 ---
 theme: seriph
 colorSchema: dark
-background: '#1E1E1E'
+background: '#32353C'
 title: Как фичи попадают в JavaScript?
 class: text-center
 drawings:

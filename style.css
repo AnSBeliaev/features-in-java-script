@@ -1,20 +1,64 @@
 :root {
-  --js-bg: #1e1e1e;
-  --js-text: #d4d4d4;
+  --js-bg: #32353c;
+  --js-text: #e0e1dd;
   --js-accent: #f7df1e;
-  --js-panel: #252526;
+  --js-panel: #3d4048;
+  --slidev-theme-primary: #f7df1e;
+}
+
+.slidev-slide-content,
+.slidev-slide-container,
+.bg-main,
+.slidev-layout {
+  background: var(--js-bg) !important;
+  color: var(--js-text) !important;
 }
 
 .slidev-layout {
-  background: var(--js-bg) !important;
-  color: var(--js-text);
+  height: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
-.slidev-layout h1,
 .slidev-layout h2,
 .slidev-layout h3 {
   color: var(--js-accent) !important;
 }
+
+.slidev-layout.text-center h1 {
+  color: #f7df1e !important;
+}
+
+.slidev-layout:not(.text-center) {
+  padding-top: 5.2rem;
+}
+
+.slidev-layout:not(.text-center) h1 {
+  position: absolute;
+  top: 1.6rem;
+  left: 0;
+  z-index: 3;
+  margin: 0 !important;
+  padding: 0.7rem 1.6rem 0.7rem 1.5rem;
+  display: inline-block;
+  width: max-content;
+  max-width: min(72%, calc(100% - 13rem));
+  background: var(--label-bg, #fde68a);
+  color: #1e1e1e !important;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  font-weight: 700;
+  border-radius: 0 0.45rem 0.45rem 0;
+}
+
+.slidev-layout.tc39-slide { --label-bg: #fde68a; }
+.slidev-layout.champions-slide { --label-bg: #c4b5fd; }
+.slidev-layout.stages-slide { --label-bg: #86efac; }
+.slidev-layout.decorators-slide { --label-bg: #fcd34d; }
+.slidev-layout.two-fns-slide { --label-bg: #93c5fd; }
+.slidev-layout.temporal-slide { --label-bg: #fde68a; }
+.slidev-layout.records-slide { --label-bg: #f9a8d4; }
+.slidev-layout.links-slide { --label-bg: #5eead4; }
 
 .slidev-layout h1 + p {
   color: var(--js-text);
@@ -31,12 +75,7 @@
 }
 
 .slidev-layout strong {
-  color: #e8e8e8;
-}
-
-.slidev-layout.tc39-slide li strong,
-.slidev-layout.champions-slide li strong {
-  color: var(--js-accent);
+  color: #f7df1e !important;
 }
 
 .slidev-layout th {
@@ -60,7 +99,7 @@
   right: 0;
   bottom: 0;
   width: 12rem;
-  background: #2d2d30;
+  background: #3d4048;
   pointer-events: none;
   z-index: 0;
 }

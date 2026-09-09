@@ -15,7 +15,7 @@ async function render() {
     width: props.size,
     margin: 1,
     color: {
-      dark: '#1E1E1E',
+      dark: '#32353C',
       light: '#FFFFFF',
     },
   })
