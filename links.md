@@ -3,6 +3,7 @@
 ## Процесс TC39
 
 - [Каталог предложений](https://github.com/tc39/proposals) — список фич и ссылки на репозитории
+- [Протоколы заседаний](https://github.com/tc39/notes) — заметки пленарных встреч TC39
 - [Сайт TC39](https://tc39.es/)
 - [Стадии процесса](https://tc39.es/process-document/)
 

@@ -11,7 +11,7 @@ comark: true
 duration: 35min
 ---
 
-# Как фичи попадают в JavaScript?
+# Как фичи попадают в JavaScript
 
 Как устроен ТС39 и за какими стадиями следить разработчикам?
 
@@ -20,23 +20,22 @@ transition: fade-out
 class: tc39-slide
 ---
 
-# Кто развивает JavaScript?
+# Как комитет TC39 развивает JavaScript
 
-<div class="grid grid-cols-[1fr_9rem] gap-8 items-center">
-<div>
 
-**Знакомьтесь: комитет TC39**
 
-- **Архитекторы языка**: Международная группа экспертов, которая создаёт спецификацию ECMAScript.
-- **Из кого состоит**: Делегаты от главных ИТ-гигантов: Google, Apple, Mozilla, Microsoft и др.
-- **Главное правило**: Решения принимаются только абсолютным консенсусом (если хоть один против — фича не пройдёт).
-- **Всё открыто**: Обсуждения, код и протоколы встреч лежат публично на GitHub.
+<div class="tc39-wrap">
+<div class="tc39-body">
+
+- **Создает спецификацию ECMAScript**: Это международная группа экспертов, которая решает, как именно будет развиваться язык.
+- **Объединяет главных IT-гигантов**: В комитет входят делегаты от Google, Apple, Mozilla, Microsoft и других корпораций.
+- **Работает на основе консенсуса**: Если хотя бы один участник против новой фичи — она не пройдет.
+- **Ведет разработку открыто**: Все обсуждения, предложения (proposals) и протоколы встреч публично доступны на GitHub.
 
 </div>
-
-<div class="flex flex-col gap-4 items-center">
-  <img src="./images/logo-tc39.webp" class="w-32 rounded" alt="TC39" />
-  <img src="./images/logo-js.jpg" class="w-32 rounded" alt="JavaScript" />
+<div class="tc39-logos">
+  <img src="./images/logo-tc39.webp" alt="TC39" />
+  <img src="./images/logo-js.jpg" alt="JavaScript" />
 </div>
 </div>
 
@@ -60,7 +59,7 @@ class: champions-slide
 - **Без чемпиона фича умирает:** Если у предложения нет активного лидера (или группа чемпионов выгорела) — фича навсегда застревает в архиве.
 
 </div>
-<div class="temporal-photo champions-photo">
+<div class="temporal-photo">
   <img src="./images/champions.jpg" alt="We are the Champions" />
 </div>
 </div>
@@ -76,33 +75,27 @@ notes: |
 <div class="tc39-stages">
 
 <div class="tc39-stage">
-<span class="tc39-stage-emoji">🤔</span>
-<div><strong>Stage 0: Strawman</strong> — Просто идея. Кто-то пришел и сказал: «Было бы круто, если бы в JS было вот так».</div>
+<strong>Stage 0: Strawman</strong> — Просто идея. Кто-то пришел и сказал: «Было бы круто, если бы в JS было вот так».
 </div>
 
 <div class="tc39-stage">
-<span class="tc39-stage-emoji">🧪</span>
-<div><strong>Stage 1: Proposal</strong> — Проблема признана важной. Назначен чемпион, рождаются первые экспериментальные полифилы.</div>
+<strong>Stage 1: Proposal</strong> — Проблема признана важной. Назначен чемпион, рождаются первые экспериментальные полифилы.
 </div>
 
 <div class="tc39-stage">
-<span class="tc39-stage-emoji">🧽</span>
-<div><strong>Stage 2: Draft</strong> — Первое точное описание синтаксиса в спецификации. Архитектура фичи фиксируется.</div>
+<strong>Stage 2: Draft</strong> — Первое точное описание синтаксиса в спецификации. Архитектура фичи фиксируется.
 </div>
 
 <div class="tc39-stage tc39-stage-27">
-<span class="tc39-stage-emoji">🧊</span>
-<div><strong>Stage 2.7: Assessment</strong> — (Новинка!) Дизайн фичи заморожен. Изменения больше не вносятся, авторы начинают писать тесты.</div>
+<strong>Stage 2.7: Assessment</strong> — (Новинка!) Дизайн фичи заморожен. Изменения больше не вносятся, авторы начинают писать тесты.
 </div>
 
 <div class="tc39-stage">
-<span class="tc39-stage-emoji">🤞</span>
-<div><strong>Stage 3: Candidate</strong> — Тесты готовы. Браузерные движки (V8, WebKit) начинают писать нативную реализацию.</div>
+<strong>Stage 3: Candidate</strong> — Тесты готовы. Браузерные движки (V8, WebKit) начинают писать нативную реализацию.
 </div>
 
 <div class="tc39-stage">
-<span class="tc39-stage-emoji">🥳</span>
-<div><strong>Stage 4: Finished</strong> — Фича протестирована в реальных браузерах и официально становится частью стандарта JavaScript.</div>
+<strong>Stage 4: Finished</strong> — Фича протестирована в реальных браузерах и официально становится частью стандарта JavaScript.
 </div>
 
 </div>
@@ -210,7 +203,7 @@ class: records-slide
 * **Что дальше:** Вместо примитивов обсуждается проект **Composites** — обычные объекты с поверхностной неизменяемостью и сравнением через метод `.equals()`.
 
 </div>
-<div class="temporal-photo records-photo">
+<div class="temporal-photo">
   <img src="./images/records-meme.jpg" alt="Усложнять просто. Упрощать сложно" />
 </div>
 </div>
@@ -224,7 +217,7 @@ class: links-slide
 <div class="grid grid-cols-[1fr_auto] gap-12 items-center">
 <div>
 
-Каталог TC39, Decorators, Temporal, Records & Tuples.
+Каталог TC39, протоколы заседаний, Decorators, Temporal, Records & Tuples.
 
 </div>
 
