@@ -124,7 +124,8 @@
 }
 
 .temporal-body > div > *:first-child,
-.tc39-body > *:first-child {
+.tc39-body > *:first-child,
+.two-fns-body > *:first-child {
   margin-top: 0 !important;
 }
 
@@ -158,6 +159,44 @@
   line-height: 21px !important;
 }
 
+.date-vs-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  width: 100%;
+}
+
+.date-vs-old,
+.date-vs-new {
+  min-width: 0;
+}
+
+.date-vs-old .slidev-code-wrapper,
+.date-vs-new .slidev-code-wrapper {
+  margin: 0 !important;
+  max-width: 100%;
+}
+
+.date-vs-old .slidev-code,
+.date-vs-old pre,
+.date-vs-new .slidev-code,
+.date-vs-new pre {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.date-vs-old .slidev-code,
+.date-vs-old pre {
+  border-left: 4px solid #ef4444;
+}
+
+.date-vs-new .slidev-code,
+.date-vs-new pre {
+  border-left: 4px solid var(--js-accent);
+}
+
 .slidev-layout.stages-slide {
   font-size: 0.95rem;
   line-height: 1.35;
@@ -167,7 +206,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
-  margin-top: 0.4rem;
+  margin-top: 0;
 }
 
 .slidev-layout.stages-slide .tc39-stage {
