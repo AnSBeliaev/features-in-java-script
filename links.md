@@ -20,3 +20,9 @@
 
 - [proposal-record-tuple](https://github.com/tc39/proposal-record-tuple) — отозван в апреле 2025
 - [Issue об отзыве](https://github.com/tc39/proposal-record-tuple/issues/394)
+
+## Stage 3
+
+- [import defer](https://github.com/tc39/proposal-defer-import-eval)
+- [Await Dictionary](https://github.com/tc39/proposal-await-dictionary)
+- [Iterator.prototype.join](https://github.com/tc39/proposal-iterator-join)

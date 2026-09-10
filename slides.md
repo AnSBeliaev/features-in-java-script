@@ -262,6 +262,25 @@ class: records-slide
 </div>
 
 ---
+class: expect-features
+---
+
+# Что ожидаем?
+
+<div class="temporal-body">
+<div>
+
+- **import defer.** Откладывает выполнение тяжелого кода. Браузер скачивает модуль заранее, но запускает его синхронно только при первом обращении к функциям.
+- **Promise.allKeyed().** Упрощает параллельные запросы к API. Позволяет передавать в Promise целый объект с промисами и получать на выходе готовые данные без путаницы с индексами массивов.
+- **Iterator.prototype.join.** Собирает строки напрямую из итераторов. Позволяет объединять элементы из генераторов или коллекций `Map` сразу в текст, не создавая в памяти лишние массивы-посредники.
+
+</div>
+<div class="temporal-photo">
+  <img src="./images/zhdun.webp" alt="Ждун" />
+</div>
+</div>
+
+---
 class: links-slide
 ---
 
@@ -270,7 +289,7 @@ class: links-slide
 <div class="grid grid-cols-[1fr_auto] gap-12 items-center">
 <div>
 
-Каталог TC39, протоколы заседаний, Decorators, Temporal, Records & Tuples.
+Каталог TC39, протоколы заседаний, Decorators, Temporal, Records & Tuples, Stage 3.
 
 </div>
 

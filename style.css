@@ -78,7 +78,9 @@
 }
 
 .slidev-layout.tc39-slide .tc39-logos img {
-  width: 8rem;
+  width: 8rem !important;
+  max-width: 8rem !important;
+  height: auto !important;
   border-radius: 0.35rem;
   display: block;
 }
@@ -88,6 +90,7 @@
 .slidev-layout.two-fns-slide { --label-bg: #93c5fd; }
 .slidev-layout.temporal-slide { --label-bg: #fde68a; }
 .slidev-layout.records-slide { --label-bg: #f9a8d4; }
+.slidev-layout.expect-features { --label-bg: #fdba74; }
 .slidev-layout.links-slide { --label-bg: #5eead4; }
 
 .slidev-layout h1 + p {
@@ -130,7 +133,8 @@
 }
 
 .temporal-body ul,
-.tc39-body ul {
+.tc39-body ul,
+.slidev-layout.expect-features ul {
   margin-top: 0;
   padding-top: 0;
 }
@@ -142,7 +146,9 @@
 
 .temporal-photo img {
   margin-top: 0;
-  width: 11rem;
+  width: 11rem !important;
+  max-width: 11rem !important;
+  height: auto !important;
   display: block;
   border-radius: 0.5rem;
 }
