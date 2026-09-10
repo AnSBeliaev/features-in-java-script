@@ -119,6 +119,10 @@
   overflow: hidden;
 }
 
+.slidev-layout.links-slide ul {
+  margin-top: 0;
+}
+
 .temporal-body {
   display: grid;
   grid-template-columns: 1fr auto;
