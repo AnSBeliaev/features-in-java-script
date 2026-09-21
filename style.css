@@ -86,12 +86,14 @@
 }
 .slidev-layout.champions-slide { --label-bg: #c4b5fd; }
 .slidev-layout.stages-slide { --label-bg: #86efac; }
+.slidev-layout.thesis-slide { --label-bg: #f7df1e; }
 .slidev-layout.decorators-slide { --label-bg: #fcd34d; }
 .slidev-layout.two-fns-slide { --label-bg: #93c5fd; }
 .slidev-layout.temporal-slide { --label-bg: #fde68a; }
 .slidev-layout.records-slide { --label-bg: #f9a8d4; }
 .slidev-layout.expect-features { --label-bg: #fdba74; }
 .slidev-layout.links-slide { --label-bg: #5eead4; }
+.slidev-layout.transpile-slide { --label-bg: #67e8f9; }
 
 .slidev-layout h1 + p {
   color: var(--js-text);
@@ -138,7 +140,9 @@
 
 .temporal-body ul,
 .tc39-body ul,
-.slidev-layout.expect-features ul {
+.slidev-layout.expect-features ul,
+.slidev-layout.thesis-slide ul,
+.slidev-layout.transpile-slide ul {
   margin-top: 0;
   padding-top: 0;
 }

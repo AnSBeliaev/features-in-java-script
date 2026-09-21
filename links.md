@@ -1,5 +1,7 @@
 # Ссылки к докладу «Как фичи попадают в JavaScript?»
 
+Доклад: https://features-in-java-script.vercel.app
+
 ## Как проверить статус фичи за две минуты
 
 1. [Каталог TC39](https://github.com/tc39/proposals) — есть ли предложение и какая у него стадия. Нет в каталоге — это ещё не путь в стандарт.
@@ -7,21 +9,25 @@
 3. [node.green](https://node.green/) — есть ли она в нужной версии Node.
 4. [caniuse](https://caniuse.com/) — в каких браузерах фича уже есть.
 
+Стадия в каталоге и «можно ли это использовать» — не одно и то же. Stage 4 не значит, что фича доступна везде без полифила. Stage 2.7 не значит, что ее нельзя использовать в проде: в Nest вы пишете `@Injectable()`, TypeScript при сборке превращает это в обычный вызов функции. До браузера декоратор даже не доезжает.
+
 ## Процесс TC39
 
 - [Каталог предложений](https://github.com/tc39/proposals)
 - [Протоколы заседаний](https://github.com/tc39/notes)
+- [Заседание 19 мая 2026: Decorators → 2.7](https://github.com/tc39/notes/blob/main/meetings/2026-05/may-19.md)
 - [Сайт TC39](https://tc39.es/)
 - [Стадии процесса](https://tc39.es/process-document/)
 
 ## Decorators
 
-- [proposal-decorators](https://github.com/tc39/proposal-decorators)
+- [proposal-decorators](https://github.com/tc39/proposal-decorators) — Stage 2.7
 
 ## Temporal
 
 - [proposal-temporal](https://github.com/tc39/proposal-temporal)
 - [Спецификация Temporal](https://tc39.es/proposal-temporal/)
+- [caniuse: Temporal](https://caniuse.com/temporal) — Safari только Technology Preview
 
 ## Records & Tuples
 
@@ -31,5 +37,8 @@
 ## Stage 3
 
 - [import defer](https://github.com/tc39/proposal-defer-import-eval)
-- [Await Dictionary / Promise.allKeyed](https://github.com/tc39/proposal-await-dictionary)
 - [Iterator.prototype.join](https://github.com/tc39/proposal-iterator-join)
+
+## Stage 2.7
+
+- [Await Dictionary / Promise.allKeyed](https://github.com/tc39/proposal-await-dictionary)
