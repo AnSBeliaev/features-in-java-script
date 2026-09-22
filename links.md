@@ -35,6 +35,12 @@
 - [Issue об отзыве](https://github.com/tc39/proposal-record-tuple/issues/394)
 - [proposal-composites](https://github.com/tc39/proposal-composites) — Stage 1, та же задача другим подходом
 
+## Что есть, но не стоит использовать
+
+- [Приложение B](https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html) — `substr`. Раздел есть, потому что веб нельзя сломать
+- [`with`](https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-with-statement) — основной текст спецификации, не приложение B. Замедляет код, делает его нечитаемым, запрещена в `use strict`. [Подробнее](https://learn.javascript.ru/with)
+- [Legacy RegExp features](https://github.com/tc39/proposal-regexp-legacy-features) — Stage 3, чтобы описать `RegExp.$1`
+
 ## Stage 3
 
 - [import defer](https://github.com/tc39/proposal-defer-import-eval)
