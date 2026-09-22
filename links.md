@@ -31,8 +31,9 @@
 
 ## Records & Tuples
 
-- [proposal-record-tuple](https://github.com/tc39/proposal-record-tuple) — отозван в апреле 2025
+- [proposal-record-tuple](https://github.com/tc39/proposal-record-tuple) — в апреле 2025 отозван со Stage 2: withdrawn; subsumed by Composites
 - [Issue об отзыве](https://github.com/tc39/proposal-record-tuple/issues/394)
+- [proposal-composites](https://github.com/tc39/proposal-composites) — Stage 1, та же задача другим подходом
 
 ## Stage 3
 
