@@ -93,6 +93,7 @@
 .slidev-layout.records-slide { --label-bg: #f9a8d4; }
 .slidev-layout.legacy-slide { --label-bg: #fca5a5; }
 .slidev-layout.expect-features { --label-bg: #fdba74; }
+.slidev-layout.dont-wait-slide { --label-bg: #a5b4fc; }
 .slidev-layout.links-slide { --label-bg: #5eead4; }
 .slidev-layout.transpile-slide { --label-bg: #67e8f9; }
 
@@ -143,10 +144,27 @@
 .tc39-body ul,
 .slidev-layout.legacy-slide ul,
 .slidev-layout.expect-features ul,
+.slidev-layout.dont-wait-slide ul,
 .slidev-layout.thesis-slide ul,
 .slidev-layout.transpile-slide ul {
   margin-top: 0;
   padding-top: 0;
+}
+
+.slidev-layout.legacy-slide ul {
+  font-size: 0.9em;
+  line-height: 1.35;
+}
+
+.slidev-layout.legacy-slide li {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.slidev-layout.dont-wait-slide .slidev-code {
+  font-size: 15px !important;
+  line-height: 22px !important;
+  margin: 0.4rem 0 !important;
 }
 
 .temporal-photo,

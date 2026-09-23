@@ -49,3 +49,9 @@
 ## Stage 2.7
 
 - [Await Dictionary / Promise.allKeyed](https://github.com/tc39/proposal-await-dictionary)
+
+## Чего не стоит ждать
+
+- [Pipeline operator](https://github.com/tc39/proposal-pipeline-operator) — Stage 2 с 2017 года, последнее заседание январь 2026
+- [Pattern matching](https://github.com/tc39/proposal-pattern-matching) — Stage 1, последний раз в повестке комитета сентябрь 2023
+- [Signals](https://github.com/tc39/proposal-signals) — Stage 1 с 2024 года
